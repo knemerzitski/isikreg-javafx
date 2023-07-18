@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact name="isikreg:dist">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="root">
+      <element id="directory" name="juhendid">
+        <element id="directory" name="seadete_näited">
+          <element id="dir-copy" path="$PROJECT_DIR$/docs/settings_examples" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/docs/isikreg_seadete_dokumentatsioon_4.2.pdf" />
+        <element id="file-copy" path="$PROJECT_DIR$/docs/isikreg_kasutusjuhend_4.2.pdf" />
+        <element id="file-copy" path="$PROJECT_DIR$/docs/isikreg_häire_lühijuhend_4.2.pdf" />
+        <element id="file-copy" path="$PROJECT_DIR$/docs/versiooni_ajalugu.md" />
+      </element>
+      <element id="artifact" artifact-name="isikreg:jar" />
+    </root>
+  </artifact>
+</component>

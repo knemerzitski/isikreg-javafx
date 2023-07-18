@@ -1,0 +1,28 @@
+.check-box-readonly .box {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+}
+
+.column-center .label {
+  -fx-alignment: CENTER;
+  -fx-text-alignment: CENTER;
+}
+
+.statistics-pane {
+  -fx-background-color: transparent;
+  -fx-border-style: hidden solid hidden solid;
+  -fx-border-color: -fx-box-border;
+}
+
+.underline {
+  -fx-underline: true;
+}
+
+.quick-buttons {
+  -fx-border-style: hidden solid hidden hidden;
+  -fx-border-color: -fx-box-border;
+}
+
+.danger-button {
+  -fx-base: #f56767;
+}

@@ -1,0 +1,78 @@
+{
+  "columns": [
+    {
+      "label": "Registreeritud",
+      "id": "REGISTERED",
+      "group": "REGISTRATION",
+      "type": "CHECKBOX",
+      "form": false,
+      "table": {
+        "editable": true
+      }
+    },
+    {
+      "label": "Registreerimise\ntüüp",
+      "id": "REGISTRATION_TYPE",
+      "group": "REGISTRATION",
+      "type": "RADIO",
+      "form": {
+        "layout": "HORIZONTAL",
+        "required": true
+      },
+      "options": [
+        "Sisse",
+        "Välja"
+      ]
+    },
+    {
+      "label": "Registreerimise\naeg",
+      "id": "REGISTER_DATE",
+      "group": "REGISTRATION",
+      "type": "DATE",
+      "dateFormat": "dd.MM HH:mm",
+      "form": false
+    },
+    {
+      "label": "Isikukood",
+      "id": "PERSONAL_CODE",
+      "type": "TEXT",
+      "form": {
+        "required": true
+      }
+    },
+    {
+      "label": "Eesnimi",
+      "id": "FIRST_NAME",
+      "type": "TEXT"
+    },
+    {
+      "label": "Perekonnanimi",
+      "id": "LAST_NAME",
+      "type": "TEXT"
+    },
+    {
+      "label": "Keel",
+      "type": "COMBOBOX",
+      "form": {
+        "default": "Eesti"
+      },
+      "options": [
+        "Eesti",
+        "Vene",
+        "Inglise"
+      ]
+    },
+    {
+      "label": "Vanus",
+      "type": "RADIO",
+      "options": [
+        "Täiskasvanu",
+        "Laps"
+      ]
+    },
+    {
+      "label": "Erivajadus",
+      "type": "CHECKBOX"
+    }
+  ]
+}

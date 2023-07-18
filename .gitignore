@@ -1,0 +1,23 @@
+classes
+target
+
+# IntellJ IDEA Workspace file
+.idea/workspace.xml
+
+# Generated file
+isikreg.json
+isikreg.json.zip
+settings.json
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Excel file
+*.xlsx
+
+# Package file
+*.jar
+!local_repo/jcardsim-3.0.5-SNAPSHOT.jar

@@ -1,0 +1,72 @@
+{
+  "columns": [
+    {
+      "label": "Registreeritud",
+      "id": "REGISTERED",
+      "group": "REGISTRATION",
+      "type": "CHECKBOX",
+      "form": false,
+      "table": {
+        "editable": true
+      }
+    },
+    {
+      "label": "Registreerimise\ntüüp",
+      "id": "REGISTRATION_TYPE",
+      "group": "REGISTRATION",
+      "type": "RADIO",
+      "form": {
+        "layout": "HORIZONTAL",
+        "required": true
+      },
+      "options": [
+        "Sisse",
+        "Välja"
+      ]
+    },
+    {
+      "label": "Registreerimise\naeg",
+      "id": "REGISTER_DATE",
+      "group": "REGISTRATION",
+      "type": "DATE",
+      "dateFormat": "dd.MM HH:mm",
+      "form": false
+    },
+    {
+      "label": "Isikukood",
+      "id": "PERSONAL_CODE",
+      "type": "TEXT",
+      "form": {
+        "required": true
+      }
+    },
+    {
+      "label": "text",
+      "type": "TEXT"
+    },
+    {
+      "label": "checkbox",
+      "type": "CHECKBOX"
+    },
+    {
+      "label": "date",
+      "type": "DATE"
+    },
+    {
+      "label": "combobox",
+      "type": "COMBOBOX",
+      "options": [
+        "Combobox1",
+        "Combobox2"
+      ]
+    },
+    {
+      "label": "radio",
+      "type": "RADIO",
+      "options": [
+        "Radio1",
+        "Radio2"
+      ]
+    }
+  ]
+}
