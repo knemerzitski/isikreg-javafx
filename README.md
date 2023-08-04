@@ -1,8 +1,7 @@
 # Personnel Registration Application
 
 Personnel Registration Application is used for **quick registration** of personnel
-using **Estonian ID-cards**. It manages personnel registration in a searchable table. 
-Data can be exported to Excel.
+using **Estonian ID-cards**. It manages personnel registration in a searchable table.
 
 ![Personnel Registration Application](assets/hero.jpg)
 
@@ -55,7 +54,7 @@ Tests are written with JUnit and TestFX.
 Run command `mvn test`. 
 
 By default, TestFX runs headless.
-You can disable this changing `pom.xml` file:  
+You can disable this by changing `pom.xml` file:  
 from `<testfx.headless>true</testfx.headless>` to `<testfx.headless>false</testfx.headless>`.
 
 ## License
