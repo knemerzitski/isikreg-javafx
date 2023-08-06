@@ -70,9 +70,11 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static com.knemerzitski.isikreg.utils.IOUtils.hasWritePermissions;
+
 public class IsikReg {
 
-  private static final String VERSION = "4.2";
+  private static final String VERSION = "4.2.1";
   private static final String WINDOW_TITLE = "Isikkoosseisu Registreerimise Rakendus";
   private static final String TITLE_FORMAT = "%1$s %2$s";
 
@@ -153,6 +155,12 @@ public class IsikReg {
       if (exceptionHandler == null)
         exceptionHandler = createUncaughtExceptionHandler();
       Thread.setDefaultUncaughtExceptionHandler(exceptionHandler); // For JavaFX Thread
+
+      // Check if have file write permissions in app directory
+      if(!hasWritePermissions()){
+        dialogHandler.exception(true, "Kirjutusviga", "Programmi kaustas puudub kirjutusõigus!");
+        stop(null);
+      }
 
       if (fileSystem == null)
         fileSystem = createFileSystem();
