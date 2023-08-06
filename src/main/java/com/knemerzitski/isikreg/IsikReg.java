@@ -911,7 +911,7 @@ public class IsikReg {
     terminalsManager.cardPresentProperty().addListener((_obs, _old, newValue) ->
         Platform.runLater(() -> mainCardStatusPane.cardPresentProperty().set(newValue)));
 
-    terminalsManager.statusProperty().addListener((l, o, status) -> {
+    ChangeListener<TerminalsManager.Status> statusChangeListener = (l, o, status) -> {
       if (status != null) {
         Platform.runLater(() -> mainCardStatusText.setStatus(status));
         switch (status) {
@@ -927,7 +927,10 @@ public class IsikReg {
             cardRecordPropertiesNotRegistered = null;
         }
       }
-    });
+    };
+    // Trigger initial status value
+    statusChangeListener.changed(terminalsManager.statusProperty(), null, terminalsManager.statusProperty().getValue());
+    terminalsManager.statusProperty().addListener(statusChangeListener);
 
     taskExecutor.execute(terminalsManager);
 

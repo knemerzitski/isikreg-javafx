@@ -161,6 +161,9 @@ public abstract class TerminalsManager implements Runnable {
 
   @Override
   public void run() {
+    // Cannot proceed without PC/SC TerminalFactory
+    if(terminalFactory.getType().equals(TERMINAL_FACTORY_TYPE_NONE)) return;
+
     terminals = terminalFactory.terminals();
 
     try {
